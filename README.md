@@ -22,24 +22,24 @@ output.items
 ```swift
 // Your subclass of NSCollectionViewItem
 
-extension CaskItemViewController: NibLoadable, Reusable {}
+extension CollectionViewItem: NibLoadable, Reusable {}
 
-extension CaskItemViewController: Configurable {
-	
+extension CollectionViewItem: Configurable {
+
 	func configure(with model: ItemModel) {
 		let input: Input = model
 		let output: Output = model
-		
+
 		disposeBag = DisposeBag()
-		
+
 		downloadButton.rx.tap
 			.bind(to: input.downloadClick)
 			.disposed(by: disposeBag)
-		
+
 		output.name
 			.bind(to: nameLabel.rx.text)
 			.disposed(by: disposeBag)
-		
+
 		output.version
 			.bind(to: versionLabel.rx.text)
 			.disposed(by: disposeBag)
