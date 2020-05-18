@@ -72,7 +72,9 @@
 		B3B40AFF2472256B003639B8 = {
 			isa = PBXGroup;
 			children = (
-				B3B40B0B2472256B003639B8 /* RxNSCollectionView */,
+				B3B40B2324722577003639B8 /* Sources */,
+				B3B40B0C2472256B003639B8 /* RxNSCollectionView.h */,
+				B3B40B0D2472256B003639B8 /* Info.plist */,
 				B3B40B0A2472256B003639B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,16 +85,6 @@
 				B3B40B092472256B003639B8 /* RxNSCollectionView.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B3B40B0B2472256B003639B8 /* RxNSCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				B3B40B2324722577003639B8 /* Sources */,
-				B3B40B0C2472256B003639B8 /* RxNSCollectionView.h */,
-				B3B40B0D2472256B003639B8 /* Info.plist */,
-			);
-			path = RxNSCollectionView;
 			sourceTree = "<group>";
 		};
 		B3B40B2324722577003639B8 /* Sources */ = {
