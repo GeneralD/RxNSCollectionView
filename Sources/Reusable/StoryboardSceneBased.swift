@@ -2,15 +2,15 @@ import Cocoa
 
 // MARK: Protocol Definition
 
-/// Make your UIViewController subclasses conform to this protocol when:
+/// Make your NSViewController subclasses conform to this protocol when:
 ///  * they *are* Storyboard-based, and
 ///  * this ViewController is not the initialViewController of your Storyboard, but a different scene
 ///
 /// to be able to instantiate them from the Storyboard in a type-safe manner.
 ///
-/// You need to implement `sceneStoryboard` yourself to indicate the UIStoryboard this scene is from.
+/// You need to implement `sceneStoryboard` yourself to indicate the NSStoryboard this scene is from.
 public protocol StoryboardSceneBased: class {
-	/// The UIStoryboard to use when we want to instantiate this ViewController
+	/// The NSStoryboard to use when we want to instantiate this ViewController
 	static var sceneStoryboard: NSStoryboard { get }
 	/// The scene identifier to use when we want to instantiate this ViewController from its associated Storyboard
 	static var sceneIdentifier: String { get }

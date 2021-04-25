@@ -2,7 +2,7 @@ import Cocoa
 
 // MARK: Protocol Definition
 
-/// Make your UIView subclasses conform to this protocol when:
+/// Make your NSView subclasses conform to this protocol when:
 ///  * they *are* NIB-based, and
 ///  * this class is used as the XIB's File's Owner
 ///

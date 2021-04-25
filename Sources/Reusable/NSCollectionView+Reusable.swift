@@ -1,12 +1,12 @@
 import Cocoa
 
-// MARK: Reusable support for UICollectionView
+// MARK: Reusable support for NSCollectionView
 
 public extension NSCollectionView {
 	/**
-	Register a NIB-Based `UICollectionViewCell` subclass (conforming to `Reusable` & `NibLoadable`)
+	Register a NIB-Based `NSCollectionViewItem` subclass (conforming to `Reusable` & `NibLoadable`)
 	
-	- parameter itemType: the `UICollectionViewCell` (`Reusable` & `NibLoadable`-conforming) subclass to register
+	- parameter itemType: the `NSCollectionViewItem` (`Reusable` & `NibLoadable`-conforming) subclass to register
 	
 	- seealso: `register(_:,forCellWithReuseIdentifier:)`
 	*/
@@ -16,9 +16,9 @@ public extension NSCollectionView {
 	}
 	
 	/**
-	Register a Class-Based `UICollectionViewCell` subclass (conforming to `Reusable`)
+	Register a Class-Based `NSCollectionViewItem` subclass (conforming to `Reusable`)
 	
-	- parameter itemType: the `UICollectionViewCell` (`Reusable`-conforming) subclass to register
+	- parameter itemType: the `NSCollectionViewItem` (`Reusable`-conforming) subclass to register
 	
 	- seealso: `register(_:,forCellWithReuseIdentifier:)`
 	*/
@@ -28,12 +28,12 @@ public extension NSCollectionView {
 	}
 	
 	/**
-	Returns a reusable `UICollectionViewCell` object for the class inferred by the return-type
+	Returns a reusable `NSCollectionViewItem` object for the class inferred by the return-type
 	
 	- parameter indexPath: The index path specifying the location of the cell.
 	- parameter itemType: The cell class to dequeue
 	
-	- returns: A `Reusable`, `UICollectionViewCell` instance
+	- returns: A `Reusable`, `NSCollectionViewItem` instance
 	
 	- note: The `itemType` parameter can generally be omitted and infered by the return type,
 	except when your type is in a variable and cannot be determined at compile time.
@@ -54,10 +54,10 @@ public extension NSCollectionView {
 	}
 	
 	/**
-	Register a NIB-Based `UICollectionReusableView` subclass (conforming to `Reusable` & `NibLoadable`)
+	Register a NIB-Based `NSCollectionViewElement` subclass (conforming to `Reusable` & `NibLoadable`)
 	as a Supplementary View
 	
-	- parameter supplementaryViewType: the `UIView` (`Reusable` & `NibLoadable`-conforming) subclass
+	- parameter supplementaryViewType: the `NSView` (`Reusable` & `NibLoadable`-conforming) subclass
 	to register as Supplementary View
 	- parameter elementKind: The kind of supplementary view to create.
 	
@@ -69,9 +69,9 @@ public extension NSCollectionView {
 	}
 	
 	/**
-	Register a Class-Based `UICollectionReusableView` subclass (conforming to `Reusable`) as a Supplementary View
+	Register a Class-Based `NSCollectionViewElement` subclass (conforming to `Reusable`) as a Supplementary View
 	
-	- parameter supplementaryViewType: the `UIView` (`Reusable`-conforming) subclass to register as Supplementary View
+	- parameter supplementaryViewType: the `NSView` (`Reusable`-conforming) subclass to register as Supplementary View
 	- parameter elementKind: The kind of supplementary view to create.
 	
 	- seealso: `register(_:,forSupplementaryViewOfKind:,withReuseIdentifier:)`
@@ -82,13 +82,13 @@ public extension NSCollectionView {
 	}
 	
 	/**
-	Returns a reusable `UICollectionReusableView` object for the class inferred by the return-type
+	Returns a reusable `NSCollectionViewElement` object for the class inferred by the return-type
 	
 	- parameter elementKind: The kind of supplementary view to retrieve.
 	- parameter indexPath:   The index path specifying the location of the cell.
 	- parameter viewType: The view class to dequeue
 	
-	- returns: A `Reusable`, `UICollectionReusableView` instance
+	- returns: A `Reusable`, `NSCollectionViewElement` instance
 	
 	- note: The `viewType` parameter can generally be omitted and infered by the return type,
 	except when your type is in a variable and cannot be determined at compile time.

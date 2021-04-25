@@ -2,7 +2,7 @@ import Cocoa
 
 // MARK: Protocol Definition
 
-/// Make your UIView subclasses conform to this protocol when:
+/// Make your NSView subclasses conform to this protocol when:
 ///  * they *are* NIB-based, and
 ///  * this class is used as the XIB's root view
 ///
@@ -26,9 +26,9 @@ public extension NibLoadable {
 
 public extension NibLoadable where Self: NSView {
 	/**
-	Returns a `UIView` object instantiated from nib
+	Returns a `NSView` object instantiated from nib
 	
-	- returns: A `NibLoadable`, `UIView` instance
+	- returns: A `NibLoadable`, `NSView` instance
 	*/
 	static func loadFromNib() -> Self {
 		var topObjects: NSArray? = []
