@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
 	s.requires_arc = true
 	s.swift_versions = '5.0'
 
-	s.dependency 'RxSwift', '~> 5.0'
-	s.dependency 'RxCocoa', '~> 5.0'
+	s.dependency 'RxSwift', '~> 6.0'
+	s.dependency 'RxCocoa', '~> 6.0'
 
 	s.framework  = "Foundation"
 	s.framework  = "Cocoa"
