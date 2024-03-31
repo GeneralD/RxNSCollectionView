@@ -8,7 +8,7 @@
 
 import RxSwift
 import RxCocoa
-
+import Cocoa
 // objc monkey business
 class _RxCollectionViewReactiveArrayDataSource: NSObject, NSCollectionViewDataSource {
 	
